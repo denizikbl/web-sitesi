@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px!important;
+}
+body{
+    
+    font-family: 'lato',sans-serif;
+    font-size: 1.6rem!important;
+    font-weight: 400!important;
+    background-color: black!important;
+    
+}
+h1, h2, h3, h4, h5{
+    font-weight: 700;
+    font-family: Montserrat;
+}
+.dp-block{
+    display: block;
+    float: left;
+}
+.kapla{
+    width: 100%;
+}
+#nav li a:hover{
+    background-color:rgb(170, 127, 47);
+}
+.logo-box{
+    float: left;
+}
+#logo-box .logo{
+    font-family:Montserrat ;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 3.2rem;
+
+}
+#nav{
+    background-color: rgb(109, 107, 23);
+    position: fixed;
+    opacity: 0.9;
+}
+#nav-links{
+    float: right;
+}
+#nav-links .nav-item{
+    float: right;
+}
+#nav-links li{
+    float: left;
+    width: 100%;
+    
+}
+#nav-links li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1.4rem 1.6rem;
+    text-decoration: none;
+}
+#nav ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#nav-links.responsive li:not(:first-child){
+    display: none;
+}
+.kenarlık{
+    border-bottom: 1px solid  blanchedalmond;;
+
+}
+.sol-cizgi{
+    border-left: 1px solid blanchedalmond;
+}
+table {
+    position: relative;
+    top: 70px;
+    width: 100%;
+}
+.deniz{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+.deniz img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.genislet{
+    width: 300px;
+}
+.uzat{
+    height: 300px;
+}
+
+.star-light{
+    border: none;
+    border-top: .4rem solid ;
+    padding: 0px;
+    overflow: visible;
+    
+}
+.deniz hr{
+    width: 30%;
+    position: relative;
+    left:10rem
+}
+.ortala hr{
+    width: 30%;
+    position: relative;
+    left:10rem
+}
+td{
+    color: blanchedalmond;
+}
+.ortala{
+    text-align: center;
+   
+}
+
+.left-renk{
+    border-left: blanchedalmond;
+}
+#genel-bilgi{
+    position: relative;
+    left: 4rem;
+    top: 7rem;
+}
+

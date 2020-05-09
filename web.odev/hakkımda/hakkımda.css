@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px!important;
+}
+body{
+    font-family: 'lato',sans-serif;
+    font-size: 1.6rem!important;
+    font-weight: 400!important;
+    background-color: rgb(12, 19, 19) !important;
+}
+h1, h2, h3, h4, h5{
+    font-weight: 700;
+    font-family: Montserrat;
+    
+}
+.nav{
+    background-color: sandybrown ;
+    padding-top: 2.5rem;
+    width: 100%;
+   
+}
+.dp-block{
+    display: block;
+    float: left;
+}
+#nav li a:hover{
+    background-color:rgb(170, 127, 47);
+}
+.logo-box{
+    float: left;
+}
+#logo-box .logo{
+    font-family:Montserrat ;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 3.2rem;
+
+}
+#nav{
+    background-color: rgb(109, 107, 23);
+    position: fixed;
+}
+#nav-links{
+    float: right;
+}
+#nav-links .nav-item{
+    float: right;
+}
+#nav-links li{
+    float: left;
+    width: 100%;
+    
+}
+#nav-links li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1.4rem 1.6rem;
+    text-decoration: none;
+}
+#nav ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#nav-links.responsive li:not(:first-child){
+    display: none;
+}
+#nav{
+    width: 100%;
+    font-family: Montserrat;
+    z-index: 490;
+    opacity: 0.9;
+}
+/*header*/
+header{
+    background-color: rgb(121, 96, 28);
+    height: 800px;
+    padding-top: calc(15rem);
+    padding-bottom: 53px;
+    text-align: center;
+    
+
+}
+header h1{
+    color: rgb(12, 19, 19);
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+}
+header h2{
+    color: rgb(12, 19, 19);
+    font-size: 3rem;
+    position: relative;
+    top:-10px;
+}
+.img-fluid{
+    width: 40%;
+    height: auto;
+}
+#profile-image{
+    border-radius: 50%;
+
+}
+.star-light, .star-dark{
+    border: none;
+    border-top: .4rem solid ;
+    padding: 0px;
+    overflow: visible;
+    
+}
+hr.star-light{
+    color: #ffffff;
+}
+hr.star-dark{
+    color: rgb(209, 136, 0);
+}
+.star-dark{
+    width: 75%;
+    padding-top: .6rem;
+}
+
+#ikon{
+    padding: 5px;
+    color: #ffffff;
+    font-size: 4rem;
+    position: relative;
+    top:-35px;
+    background-color: rgb(121, 96, 28);
+    padding: 0 8px;
+}
+#ikon-hobi{
+    padding: 5px;
+    color: rgb(209, 136, 0);
+    font-size: 4rem;
+    position: relative;
+    top:-35px;
+    left:-99px;
+    background-color: rgb(12, 19, 19);
+    padding: 0 8px;
+}
+.hobiler{
+    
+    width: 900px;
+    margin: auto;
+    padding-top: 5rem;
+}
+#hobi-baslık{
+    text-align: center;
+    font-size: 3rem;
+    display: block;
+    color: black;
+
+}
+
+#first-paragraph img, #second-paragraph img{
+    width: 28%;
+    
+}
+
+p{
+    color :#ffffff;
+    width: 75%;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 5px rgb(133, 106, 32);
+    font-size: 2rem;
+    
+}
+p #hobi-baslık{
+    color: rgb(121, 96, 28);
+}
+p::first-letter{
+    font-size: 48px;
+}
+.sola-kaydır{
+    float: left;
+    padding:0 10px 10px 0;
+   
+}
+p img{
+    width: 20%;
+    height: auto;
+    border-radius: 10%;
+}
+#portfolio h2{
+    font-size: 4rem;
+    color: rgb(88, 30, 4);
+    width: 75%;
+    font-family: 'Pacifico', cursive;
+    padding: 5px;
+    padding-top: 15px;
+    
+}
+#portfolio{
+    text-align: center;
+}

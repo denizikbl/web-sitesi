@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iletişim</title>
+    <link rel="stylesheet" href="iletisim.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" 
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" 
+    crossorigin="anonymous">
+    
+</head>
+<body class="bg-color" class="w-75 mx-auto my-4 " >
+
+    <nav class="fixed-top" id="nav">
+        <div class="container clearfix">
+            <div id="logo-box">
+                <a href="../hakkımda/index.html" class="logo">
+                    <i class="fas fa-home"></i>
+                </a>
+                <div id="nav-links" class="responsive">
+                    <ul class=" ">
+                        
+                        <li class=" nav-item "><a href="#" class="text-upparcase nav-icon"><i class="fas fa-bars"></i></a></li>
+                        <li class=" nav-item dp-block"><a href="#">about</a></li>
+                        <li class=" nav-item dp-block"><a href="#">cv</a></li>
+                        <li class=" nav-item dp-block"><a href="#">login</a></li>
+                        <li class=" nav-item dp-block"><a href="../iletişm/iletisim.html">iletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <form id="frm" action="gonder.php" method="POST">
+        <div class=" container kutu w-50 p20 " >
+            
+            <h4 class="text-danger  ortala" class="w d-blok mx-auto">bilgilerinizi doldurunuz</h4>
+            <div class="clearfix mt-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class=" float-left">
+                            <div class="form-group">
+                                <label for="ad" class="text-danger">isim</label>
+                                <input  onblur="adKontrol()" type="text" name="isim" id="ad" class="form-control" placeholder="isim gir">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class=" float-left ">
+                            <div class="form-group">
+                                <label for="soyisim" class="text-danger">soyisim</label>
+                                <input onblur="soyadKontrol()" type="text" name="soyisim" id="soyisim" class="form-control" placeholder="soyisim gir">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class=" float-left">
+                            <div class="form-group">
+                                <label for="email" class="text-danger">E-posta</label>
+                                <input onblur="emailKontrol()" name="email" type="email" id="email" class="form-control" placeholder="e-posta adresiniz">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">    
+                        <div class=" float-left">
+                            <div class="form-group">
+                                <label for="konu" class="text-danger" class="text-danger">konu</label>
+                                <input type="text" id="E-posta" class="form-control" placeholder="konu">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6"> 
+                        <div class=" float-left ">
+                            <div class="form-group">
+                                <label for="sifre">ŞİFRE</label>
+                                <input onblur="sifreKontrol()" name="sifre" type="password" id="sifre" class="form-control" placeholder="Şifrenizi Giriniz">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="şehir" class="text-danger" >şehir</label>
+                            <select name="şehir" id="şehir" class="form-control">
+                                <option value="0">istanbul</option>
+                                <option value="1">sakarya</option>
+                                <option value="2">kocaeli</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group ">
+                        <legend class="text-warning">hobiler</legend>
+                        <div class="form-check">
+                            <label class="form-check-label text-warning">
+                                <input type="checkbox"> uzayı araştırmak
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <label class="form-check-label text-warning" >
+                                <input type="checkbox" > kod yazmak
+                            </label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <label class="form-check-label text-warning">
+                                <input type="checkbox"> satranç oynamak
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <label class="form-check-label text-warning">
+                                <input type="checkbox"> bilgisayar oyunu oynamak
+                            </label>
+                        </div>
+
+                        <div class="form-check text-warning">
+                            <label class="form-check-label">
+                                <input type="checkbox"> felsefe
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    
+                    <div class="form-group">
+                        <legend class="text-warning">Cinsiyet</legend>
+                        <div class="form-radio">
+                            <label class="ml-3 text-warning" for="erkek">
+                                <input onblur="cinsiyetKontrol()" id="erkek" name="cinsiyet" type="radio" value="Erkek">Erkek
+                            </label>
+                            <label class="ml-3 text-warning" for="erkek">
+                                <input onblur="cinsiyetKontrol()" id="kadın" name="cinsiyet" type="radio" value="Kadın">Kadın
+                            </label>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <label for="message">MESAJ</label>
+                <textarea onblur="mesajKontrol()" name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Mesajınızı Giriniz"></textarea>
+            </div>
+            
+            <div class="container ortala">
+                <input class="btn btn-lg btn-danger" type="submit" name="gonder" value="Gönder" onclick="clickEvent()">
+                <input class="btn btn-lg btn-danger" type="reset" value="Temizle">
+            </div>
+    </form>
+    
+    <footer class="py-4 text-white text-center">
+        Web Teknolojileri Projesi - 2020
+    </footer> 
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   
+   <script>
+       
+       $('.nav-icon').click(function(){
+           $('#nav-links').toggleClass("responsive");
+           return false;
+       });
+    </script>
+</body>
+</html>

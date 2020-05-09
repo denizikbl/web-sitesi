@@ -1,0 +1,124 @@
+.bg-renk{
+    background-color: rgb(15, 25, 27);
+}
+h1{
+    color:rgb(241, 113, 63);
+}
+h2{
+    color:darkgoldenrod;
+}
+
+
+.first-paragraph::first-letter{
+    font-size: 48px;
+    color :darkgoldenrod;
+}
+.first-paragraph{
+    color :darkgoldenrod;
+}
+
+p{
+    color:ivory;
+    width: 75%;
+   
+    box-shadow: 5px 5px 5px 5px rgb(90, 42, 42);
+    
+}
+.ortala{
+    width: 900px;
+    margin:auto;
+}
+.sola-kaydır{
+    float: left;
+    padding:0 10px 10px 0;
+}
+a:link{
+    color:rgba(233, 36, 36, 0.801);
+
+}
+a:visited{
+    color:rgb(202, 123, 123);
+}
+a:hover{
+    color:rgb(170, 127, 47);
+}
+.p20{
+    padding: 20px;
+}
+.mt80{
+    margin-top: 8rem;
+}
+.mt4{
+    margin-bottom: 4px;
+}
+
+html{
+    font-size: 10px !important;
+}
+body {
+    
+    font-size: 1.6rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+}
+
+     /*NAVBAR*/
+
+.nav{
+    background-color: sandybrown ;
+    padding-top: 2.5rem;
+    width: 100%;
+   
+}
+.dp-block{
+    display: block;
+    float: left;
+}
+#nav li a:hover{
+    background-color:rgb(170, 127, 47);
+}
+.logo-box{
+    float: left;
+}
+#logo-box .logo{
+    font-family:Montserrat ;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 3.2rem;
+
+}
+#nav{
+    background-color: rgb(109, 107, 23);
+    position: fixed;
+    opacity: 0.9;
+}
+#nav-links{
+    float: right;
+}
+#nav-links .nav-item{
+    float: right;
+}
+#nav-links li{
+    float: left;
+    width: 100%;
+    
+}
+#nav-links li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1.4rem 1.6rem;
+    text-decoration: none;
+}
+#nav ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#nav-links.responsive li:not(:first-child){
+    display: none;
+}
+#images{
+    position: relative;
+    left: -100px;
+}

@@ -1,0 +1,84 @@
+body{
+    
+    
+    background-image: url(https://cdn.pixabay.com/photo/2020/03/18/06/06/street-4942809_1280.jpg);
+
+    background-size: cover;
+}
+.bg-color{
+    background-color: black;
+
+}
+.kutu{
+    border: rgb(121, 76, 32) 1px solid;
+    box-shadow: rgb(0, 0, 0) 6px 6px 6px 6px;
+    
+}
+.ortala{
+    text-align: center;
+}
+.satiri-kapla{
+    display: block;
+}
+.p20{
+    margin-top: 100px;
+}
+.nav{
+    background-color: sandybrown ;
+    padding-top: 2.5rem;
+    width: 100%;
+   
+}
+.dp-block{
+    display: block;
+    float: left;
+}
+#nav li a:hover{
+    background-color:rgb(170, 127, 47);
+}
+.logo-box{
+    float: left;
+}
+#logo-box .logo{
+    font-family:Montserrat ;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 3.2rem;
+
+}
+#nav{
+    background-color: rgb(109, 107, 23);
+    position: fixed;
+}
+#nav-links{
+    float: right;
+}
+#nav-links .nav-item{
+    float: right;
+}
+#nav-links li{
+    float: left;
+    width: 100%;
+    
+}
+#nav-links li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1.4rem 1.6rem;
+    text-decoration: none;
+}
+#nav ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#nav-links.responsive li:not(:first-child){
+    display: none;
+}
+#nav{
+    width: 100%;
+    font-family: Montserrat;
+    z-index: 490;
+    opacity: 0.9;
+}
