@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" 
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" 
+    crossorigin="anonymous">
+</head>
+<body>
+    <nav class="fixed-top" id="nav">
+        <div class="container clearfix">
+            <div id="logo-box">
+                <a href="../hakkımda/index.html" class="logo">
+                    <i class="fas fa-home"></i>
+                </a>
+                <div id="nav-links" class="responsive">
+                    <ul class=" ">
+                        
+                        <li class=" nav-item "><a href="#" class="text-upparcase nav-icon"><i class="fas fa-bars"></i></a></li>
+                        <li class=" nav-item dp-block"><a href="#">about</a></li>
+                        <li class=" nav-item dp-block"><a href="#">cv</a></li>
+                        <li class=" nav-item dp-block"><a href="#">login</a></li>
+                        <li class=" nav-item dp-block"><a href="../iletişm/iletisim.html">iletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </nav>
+
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header">
+                    <h3>login</h3>
+                    <div class="d-flex justify-content-end social_icon">
+                        <span><i class="fab fa-facebook-square"></i></span>
+                        <span><i class="fab fa-google-plus-square"></i></span>
+                        <span><i class="fab fa-twitter-square"></i></span>
+                    </div>
+                </div>
+                <form action="kontrol.php" method="POST" id="frm">
+                    <div class="card-body">
+                        <form>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
+                                <input onblur="adKontrol()" type="text" class="form-control" name="kulAdi"  id="ad" placeholder="kullanıcı adı" required>
+                                
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
+                                <input onblur="sifreKontrol()" type="password" name="sifre" class="form-control" id="sifre" placeholder="şifre" required>
+                            </div>
+                            <div class="row align-items-center remember">
+                                <input type="checkbox">beni hatırla
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Login" class="btn float-right login_btn btn-warning">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-center links">
+                            henüz bir hesabınız yok mu?<a href="#">kayıt ol</a>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="#">şifremi unuttum?</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+       
+        $('.nav-icon').click(function(){
+            $('#nav-links').toggleClass("responsive");
+            return false;
+        });
+ 
+ 
+ 
+     </script>
+
+<script type="text/javascript" src="script.js" ></script>
+
+</body>
+</html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iletişim</title>
     <link rel="stylesheet" href="iletisim.css">
-    <link rel="stylesheet" href="script.js">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
     crossorigin="anonymous">
@@ -37,10 +37,10 @@
                 </div>
             </div>
         </div>
-        </div>
+        
     </nav>
 
-    <form id="frm" action="gonder.php" method="POST">
+    <form id="frm" action="gonder.php" onsubmit=" return clickEvent() " method="POST">
         <div class=" container kutu w-50 p20 " >
             
             <h4 class="text-danger  ortala" class="w d-blok mx-auto">bilgilerinizi doldurunuz</h4>
@@ -50,7 +50,7 @@
                         <div class=" float-left">
                             <div class="form-group">
                                 <label for="ad" class="text-danger">isim</label>
-                                <input  onblur="adKontrol()" type="text" name="isim" id="ad" class="form-control" placeholder="isim gir">
+                                <input  onblur="isimKontrol()" type="text" name="isim" id="ad" class="form-control" placeholder="isim gir">
                             </div>
                         </div>
                     </div>
@@ -58,7 +58,7 @@
                         <div class=" float-left ">
                             <div class="form-group">
                                 <label for="soyisim" class="text-danger">soyisim</label>
-                                <input onblur="soyadKontrol()" type="text" name="soyisim" id="soyisim" class="form-control" placeholder="soyisim gir">
+                                <input onblur="soyisimKontrol()" type="text" name="soyisim" id="soyisim" class="form-control" placeholder="soyisim gir">
                             </div>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
                         <div class=" float-left">
                             <div class="form-group">
                                 <label for="konu" class="text-danger" class="text-danger">konu</label>
-                                <input type="text" id="E-posta" class="form-control" placeholder="konu">
+                                <input type="text" id="konu" class="form-control" placeholder="konu">
                             </div>
                         </div>
                     </div>
@@ -184,6 +184,11 @@
            $('#nav-links').toggleClass("responsive");
            return false;
        });
+
+
+
     </script>
+
+    <script type="text/javascript" src="script.js" ></script>
 </body>
 </html>

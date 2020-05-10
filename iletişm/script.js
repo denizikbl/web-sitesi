@@ -1,9 +1,9 @@
-function adKontrol() {
+function isimKontrol() {
     document.getElementById('ad').style.border = '2px solid red';
     
     let ad = document.getElementById('frm').isim.value;
     if(ad=="") {
-        document.getElementById('ad').placeholder = 'İsim Alanını Boş Bırakmayınız!';
+        document.getElementById('ad').placeholder = 'Lütfen isim Alanını Boş Bırakmayınız!';
         return false;
     }
     let say = ad.length;
@@ -18,23 +18,23 @@ function adKontrol() {
     }
 }
 
-function soyadKontrol() {
+function soyisimKontrol() {
     
     let soyad = document.getElementById('frm').soyisim.value;
     if(soyad=="") {
-        document.getElementById('surname').style.border = '2px solid red';
-        document.getElementById('surname').placeholder = 'Soyisim Alanını Boş Bırakmayınız!';
+        document.getElementById('soyisim').style.border = '2px solid red';
+        document.getElementById('soyisim').placeholder = 'Lütfen soyisim alanını doldurunuz!';
         return false;
     }
     let say = soyad.length;
     if(say<3 && soyad!=""){
-        document.getElementById('surname').style.border = '2px solid red';
-        document.getElementById('surname').value = "";
-        document.getElementById('surname').placeholder = 'Lütfen Soyisminizi Doğru Giriniz';
+        document.getElementById('soyisim').style.border = '2px solid red';
+        document.getElementById('soyisim').value = "";
+        document.getElementById('soyisim').placeholder = 'Lütfen Soyisminizi Doğru Giriniz';
         return false;
     }
     if(say>=3 && soyad!="") {
-        document.getElementById('surname').style.border = '2px solid green';
+        document.getElementById('soyisim').style.border = '2px solid green';
         return true;
     }
 }
@@ -94,7 +94,7 @@ function mesajKontrol() {
     if(say < 10 && mesaj != ""){
         document.getElementById('message').style.border = '2px solid red';
         document.getElementById('message').value ="";
-        document.getElementById('message').placeholder = 'Mesajınız On Karakterden Uzun Olsun';
+        document.getElementById('message').placeholder = 'Lütfen mesajınız en az on karakter Olsun';
         return false;
     }
     if(say >= 10 && mesaj != ""){
@@ -104,7 +104,8 @@ function mesajKontrol() {
 }
 
 function clickEvent() {
-    if(adKontrol()==true && soyadKontrol()==true && emailKontrol()==true && sifreKontrol()==true && mesajKontrol()==true){
+    
+    if(isimKontrol()==true && soyisimKontrol()==true && emailKontrol()==true && sifreKontrol()==true && mesajKontrol()==true){
         alert("Mesajınız Başarıyla Gönderildi");
         return true;
     }
